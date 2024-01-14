@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!--Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Nosso CSS-->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/pokedex.css">
+       <!-- Fonte Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100;300;500;700&family=Short+Stack&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <title>Pokedex</title>
+</head>
+
+<body>
+    <section class="content">
+        <h1 id="topo">Pokedex </h1>
+        <ol id="pokemonList" class="pokemons">
+           
+            
+        </ol>
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Load More
+            </button>
+            <button class="btnTop" id="loadTop" type="button">
+               <a href="#topo"> <span class="material-symbols-outlined">
+                keyboard_double_arrow_up
+                </span></a>
+            </button>
+
+        </div>
+        <div>
+            <ol id="pokemonContainer" >
+                <!--Conteúdo extra de cada Pokemon-->
+
+            </ol>
+
+
+        </div>
+        <div id="divExibicao">
+            
+        </div>
+    </section>
+    <!--Nosso JS-->
+    <script src="./assets/js/pokemon-model.js"></script><!-- Carrega o método poke-epi primeiro-->
+    <script src="./assets/js/poke-api.js"></script><!-- Carrega o método poke-epi segundo-->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
